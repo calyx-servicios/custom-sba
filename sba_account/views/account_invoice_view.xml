@@ -1,0 +1,28 @@
+<odoo>
+
+    <record id="invoice_form" model="ir.ui.view">
+        <field name="model">account.invoice</field>
+        <field name="name">invoice.form</field>
+        <field name="inherit_id" ref="account.invoice_form" />
+        <field name="arch" type="xml">
+          <xpath expr="//page[@name='other_info']/group/group[2]" position="inside">
+            <field name="code_sls" required="True"/>
+          </xpath>
+           <xpath expr="//page[@name='other_info']/group/group[2]/field[@name='origin']" position="attributes">
+                <attribute name="attrs">{'invisible': False}</attribute>
+          </xpath>
+        </field>
+    </record>
+
+    <record id="invoice_supplier_form" model="ir.ui.view">
+        <field name="model">account.invoice</field>
+        <field name="name">invoice.form</field>
+        <field name="inherit_id" ref="account.invoice_supplier_form"/>
+        <field name="arch" type="xml">
+          <xpath expr="//field[@name='origin']" position="attributes">
+                <attribute name="attrs">{'invisible': False}</attribute>
+          </xpath>
+        </field>
+    </record>
+
+</odoo>
