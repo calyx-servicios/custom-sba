@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-28 19:20+0000\n"
-"PO-Revision-Date: 2021-05-28 19:20+0000\n"
+"POT-Creation-Date: 2021-05-28 20:24+0000\n"
+"PO-Revision-Date: 2021-05-28 20:24+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: sba_account
+#: model:ir.model.fields,field_description:sba_account.field_account_invoice_associate_id
 #: model:ir.ui.view,arch_db:sba_account.base_inherit_partner
-#: model:ir.ui.view,arch_db:sba_account.invoice_form
 msgid "Associate"
 msgstr "Socio"
 
@@ -41,11 +41,16 @@ msgstr "Factura"
 #. module: sba_account
 #: model:ir.model,name:sba_account.model_account_invoice_line_report
 msgid "Invoices Statistics"
-msgstr "Estadísticas de facturas"
+msgstr "Estadísticas de facturación"
 
 #. module: sba_account
 #: model:ir.model.fields,field_description:sba_account.field_account_invoice_code_sls
 #: model:ir.model.fields,field_description:sba_account.field_account_invoice_line_report_code_sls
 msgid "SLS"
 msgstr "SLS"
+
+#. module: sba_account
+#: model:ir.model.fields,help:sba_account.field_account_invoice_associate_id
+msgid "The internal user that is in charge of communicating with this contact if any."
+msgstr "El usuario interno encargado de comunicarse con este contacto si lo hubiese."
 
