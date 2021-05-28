@@ -35,6 +35,7 @@
     ],
     'data': [
         'views/account_invoice_view.xml',
+        'views/partner_view.xml',
         'report/invoice_analysis.xml',
     ],
 }

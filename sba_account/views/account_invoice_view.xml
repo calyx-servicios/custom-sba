@@ -11,6 +11,9 @@
            <xpath expr="//page[@name='other_info']/group/group[2]/field[@name='origin']" position="attributes">
                 <attribute name="attrs">{'invisible': False}</attribute>
           </xpath>
+          <field name="user_id" position = "attributes">
+            <attribute name="string">Associate</attribute>
+          </field>
         </field>
     </record>
 
