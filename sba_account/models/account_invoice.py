@@ -17,4 +17,8 @@ class AccountInvoice(models.Model):
         if self.type in ['in_refund', 'out_refund'] and not self.origin:
             raise ValidationError(_("Debe completar el campo Documento de origen"))
         return super(AccountInvoice, self).action_invoice_open()
-        
+
+    associate_id = fields.Many2one(
+        string = 'Associate',
+        related = 'partner_id.user_id'
+    )
