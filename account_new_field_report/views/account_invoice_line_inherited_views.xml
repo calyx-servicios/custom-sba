@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="account_invoice_line_new_field_form" model="ir.ui.view">
+        <field name="name">account.invoice.line.new.field.form</field>
+        <field name="model">account.invoice</field>
+        <field name="inherit_id" ref="account.invoice_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/notebook/page/field[@name='invoice_line_ids']" position="attributes">
+                <attribute name="attrs">{"readonly" : False}</attribute>
+            </xpath>
+            <xpath expr="//sheet/notebook/page/field[@name='invoice_line_ids']/tree/field[@name='name']" position="after">
+                <field name="new_description"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
