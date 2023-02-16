@@ -1,6 +1,6 @@
-===========
-Module Name
-===========
+========================
+Account New Field Report
+========================
 
 .. !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! This module add a new field to the account     !!
