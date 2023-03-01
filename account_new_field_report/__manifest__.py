@@ -24,5 +24,6 @@
         "views/account_invoice_line_inherited_views.xml",
         "views/account_move_line_inherited_views.xml",
         "report/account_invoice_line_report_inherited_views.xml",
+        "report/templates/general_ledger.xml",
     ],
 }
