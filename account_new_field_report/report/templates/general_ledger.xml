@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="new_description_field_general_ledger_report" inherit_id="account_financial_report.report_general_ledger_lines">
+        <xpath expr="//div[hasclass('act_as_thead')]/div[hasclass('act_as_row','labels')]/div[7]" position="attributes">
+            <attribute name="style">width: 11.5%;</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('act_as_thead')]/div[hasclass('act_as_row','labels')]/div[7]" position="after">
+            <div class="act_as_cell" style="width: 11.5%;">New Ref</div>
+        </xpath>
+        <xpath expr="//div[hasclass('act_as_table','data_table')]/t/div[hasclass('act_as_row','lines')]/div[hasclass('act_as_cell','left')][7]" position="after">
+            <div class="act_as_cell left">
+                <t t-set="res_model" t-value="'account.move.line'"/>
+                    <span>
+                        <a t-att-data-active-id="line.move_line_id.id" t-att-data-res-model="res_model" class="o_account_financial_reports_web_action" style="color: black;">
+                            <t t-raw="line.move_line_id.stored_new_desc"/>
+                        </a>
+                    </span>
+            </div>
+        </xpath>
+    </template>
+</odoo>
