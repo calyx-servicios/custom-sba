@@ -5,6 +5,7 @@ class AccountMoveLine(models.Model):
     _inherit = "account.move.line"
 
     new_description = fields.Text(compute="_get_new_description")
+    stored_new_desc = fields.Text(related="new_description", store=True)
 
     def _get_new_description(self):
         for rec in self:
