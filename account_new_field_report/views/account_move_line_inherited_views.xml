@@ -10,7 +10,16 @@
             </xpath>
             <xpath expr="//sheet/notebook/page/field[@name='line_ids']/tree/field[@name='name']" position="after">
                 <field name="new_description"/>
-                <field name="stored_new_desc" invisible="True" readonly="False"/>
+            </xpath>
+        </field>
+    </record>
+    <record id="account_move_line_new_description_field_tree_view" model="ir.ui.view">
+        <field name="name">account.move.line.new.field.tree</field>
+        <field name="model">account.move.line</field>
+        <field name="inherit_id" ref="account.view_move_line_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='ref']" position="after">
+                <field name="new_description"/>
             </xpath>
         </field>
     </record>
