@@ -12,7 +12,7 @@
                 <t t-set="res_model" t-value="'account.move.line'"/>
                     <span>
                         <a t-att-data-active-id="line.move_line_id.id" t-att-data-res-model="res_model" class="o_account_financial_reports_web_action" style="color: black;">
-                            <t t-raw="line.move_line_id.stored_new_desc"/>
+                            <t t-raw="line.move_line_id.new_description"/>
                         </a>
                     </span>
             </div>
