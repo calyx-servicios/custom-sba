@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- PDF/HMTL REPORTS -->
+
+    <!-- XLSX REPORTS -->
+
+    <record id="action_report_general_ledger_xlsx" model="ir.actions.report">
+        <field name="name">General Ledger XLSX</field>
+        <field name="model">report_general_ledger</field>
+        <field name="type">ir.actions.report</field>
+        <field name="report_name">a_f_r.report_general_ledger_xlsx</field>
+        <field name="report_type">xlsx</field>
+        <field name="report_file">report_general_ledger</field>
+    </record>
+
+
+</odoo>
